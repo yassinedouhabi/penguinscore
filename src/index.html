@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Penguin Score</title>
+    <!-- TailwindCSS link -->
+    <link href="./output.css" rel="stylesheet" />
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css" />
+  </head>
+  <body class="bg-slate-100">
+    <header class="h-20">
+      <div id="navbar" class="container inline-flex items-center justify-between bg-slate-100 text-slate-900 w-full p-4">
+        <h1 id="logo" class="font-bold text-xl w-full"><i class="fa-solid fa-futbol"></i> Penguin Score</h1>
+        <div class="inline-flex items-center justify-end text-base w-full">
+          <div id="searchBar" class="hidden flex-1">
+            <div class="mr-4">
+              <input type="text" class="w-full px-4 py-2 rounded-full transition-all" placeholder="Search for a team, league, or player" />
+            </div>
+          </div>
+          <div id="searchButton" class="cursor-pointer mr-4 text-base">
+            <i class="fa-solid fa-search"></i>
+          </div>
+          <div id="profile" class="cursor-pointer mr-4 text-xl">
+            <i class="fa-regular fa-user"></i>
+          </div>
+          <div id="menuToggle" class="cursor-pointer text-xl">
+            <i id="openMenu" class="fa-solid fa-bars"></i>
+            <i id="closeMenu" class="hidden fa-solid fa-xmark"></i>
+          </div>
+        </div>
+      </div>
+      <div id="scrollNavbar" class="bg-blue-300 text-slate-950 font-medium max-w-full overflow-x-auto grid grid-cols-4 gap-4">
+        <div class="p-4 text-center">Leagues</div>
+        <div class="p-4 text-center">Live</div>
+        <div class="p-4 text-center">Fixtures</div>
+        <div class="p-4 text-center">Results</div>
+      </div>
+
+      <div id="absoluteMenu" class="hidden bg-slate-50 text-slate-950 text-xl font-medium absolute w-full rounded-t-3xl">
+        <div class="p-4">
+          <ul class="flex flex-col">
+            <li class="inline-flex items-center gap-2 py-2">
+              <i class="fa-solid fa-cog border-2 border-slate-950 rounded-xl p-2"></i>
+              Settings
+            </li>
+            <li class="inline-flex items-center gap-2 py-2">
+              <i class="fa-solid fa-info-circle border-2 border-slate-950 rounded-xl p-2"></i>
+              About
+            </li>
+            <li class="inline-flex items-center gap-2 py-2">
+              <i class="fa-solid fa-sign-out border-2 border-slate-950 rounded-xl p-2"></i>
+              Logout
+            </li>
+          </ul>
+        </div>
+        <div id="auth">
+          <div class="p-4">
+            <ul class="">
+              <li class="py-2">Login</li>
+              <li class="py-2">Register</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- scripts -->
+    <script src="./js/main.js"></script>
+    <script src="./assets/fontawesome/js/all.min.js"></script>
+  </body>
+</html>
